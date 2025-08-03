@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+ <header class="hidden">
+  <div class="header-stack">
+    <div class="header-img-container">
+      <img src="image/yzop.png" alt="Gundam Logo" class="header-img fade show">
+      <img src="image/00op.png" alt="Another Logo" class="header-img fade">
+      <img src="image/gop.png" alt="Another Logo" class="header-img fade">
+      <img src="image/seedop.png" alt="Another Logo" class="header-img fade">
+      <img src="image/ucop.png" alt="Another Logo" class="header-img fade">
+      <img src="image/bfop.png" alt="Another Logo" class="header-img fade">
+      <img src="image/mnop.png" alt="Another Logo" class="header-img fade">
+      <img src="image/ageop.png" alt="Another Logo" class="header-img fade">
+      <!-- Add more images as needed -->
+    </div>
+    <h1 class="header-title">GUNDAM</h1>
+  </div>
+</header>
+<nav class="hidden"> <!--menu system-->
+    <button id="hamIcon">Open Menu</button>
+<ul>
+<li><button id="page1btn">History of Gundam</button></li>
+<li><button id="page2btn">History of Gunpla</button></li>
+<li><button id="page3btn">Showcase of Gunpla</button></li>
+<li><button id="page4btn">Mini Game</button></li>
+<li><button id="page5btn">Quiz</button></li>
+</ul>
+</nav>
+<main id="pagecontainer">
+  <section class="center-content" id="startpage">
+    <div id="image-row">
+      <div class="image-col left">
+        <img src="image/00.png" class="fade-img" id="img1" alt="Image 1">
+        <img src="image/build.png" class="fade-img" id="img2" alt="Image 2">
+        <img src="image/seed.png" class="fade-img" id="img3" alt="Image 3">
+      </div>
+          <button id="startbtn">出撃</button>
+      <div class="image-col right">
+        <img src="image/unicorn.png" class="fade-img" id="img4" alt="Image 4">
+        <img src="image/w.png" class="fade-img" id="img5" alt="Image 5">
+        <img src="image/gundam.png" class="fade-img" id="img6" alt="Image 6">
+      </div>
+    </div>
+  </section>
+ <section class="page" id="page1">
+  <div class="page1-content">
+    <img src="image/rx-78-2.png" alt="Rx-78-2" title="Rx-78-2 Gundam" width="450" height="700">
+    <div class="page1-text">
+      <h2>History of Gundam</h2>
+      <p>Gundam is a Japanese military science fiction media franchise. Created by Yoshiyuki Tomino and Sunrise, the franchise features giant robots, or mecha, with the name "Gundam". The franchise began on April 7, 1979, with Mobile Suit Gundam, a TV series that defined the "real robot" mecha anime genre by featuring giant robots called mobile suits (including the original titular mecha) in a militaristic setting.</p>
+      <p>The popularity of the series and its merchandise spawned a franchise that includes 50 TV series, films and OVAs as well as manga, novels and video games, along with a whole industry of plastic model kits known as Gunpla which makes up 90 percent of the Japanese character plastic-model market.</p>
+      <!-- Add more text/content here -->
+    </div>
+  </div>
+  <div class="page1-content2">
+    <img src="image/strike.png" alt="strike gundam" title="Strike Gundam" width="450" height="700">
+    <div class="page1-text">
+      <h2>Timelines</h2>
+      <p>As mentioned above, the Gundam IP includes a lot of different timelines and alternate universes, each with its own unique storylines and characters. Some of the most notable timelines include the Universal Century, which is the original timeline and features the iconic RX-78-2 Gundam, and the Alternate Universe timelines, which explore different takes on the Gundam concept.</p>
+      <p>Each timeline offers a fresh perspective on the Gundam universe, introducing new characters, mecha designs, and story arcs that resonate with different audiences. But even though they may differ in style and narrative, the core themes of war, peace, and the human condition remain central to all Gundam stories.</p>
+      <!-- Add more text/content here -->
+    </div>
+  </div>
+  <h1>Gundam Timeline</h1>
+  <table class ="timeline-table">
+  <thead>
+    <tr>
+      <th>Anime Title</th>
+      <th>Release Year</th>
+      <th>Timeline</th>
+      <th>Year in Timeline</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mobile Suit Gundam</td>
+      <td>1979</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0079</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Zeta Gundam</td>
+      <td>1985</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0087</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam ZZ</td>
+      <td>1986</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0088</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam: Char's Counterattack</td>
+      <td>1988</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0093</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam 0080: War in the Pocket</td>
+      <td>1989</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0079</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam F91</td>
+      <td>1991</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0123</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Victory Gundam</td>
+      <td>1993</td>
+      <td>Universal Century (UC)</td>
+      <td>UC 0153</td>
+    </tr>
+    <tr>
+      <td>Mobile Fighter G Gundam</td>
+      <td>1994</td>
+      <td>Future Century (FC)</td>
+      <td>FC 60</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam Wing</td>
+      <td>1995</td>
+      <td>After Colony (AC)</td>
+      <td>AC 195</td>
+    </tr>
+    <tr>
+      <td>After War Gundam X</td>
+      <td>1996</td>
+      <td>After War (AW)</td>
+      <td>AW 15</td>
+    </tr>
+    <tr>
+      <td>Turn A Gundam</td>
+      <td>1999</td>
+      <td>Correct Century (CC)</td>
+      <td>CC 2345</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam SEED</td>
+      <td>2002</td>
+      <td>Cosmic Era (CE)</td>
+      <td>CE 71</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam SEED Destiny</td>
+      <td>2004</td>
+      <td>Cosmic Era (CE)</td>
+      <td>CE 73</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam 00</td>
+      <td>2007</td>
+      <td>Anno Domini (AD)</td>
+      <td>AD 2307</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam AGE</td>
+      <td>2011</td>
+      <td>Advanced Generation (AG)</td>
+      <td>AG 115</td>
+    </tr>
+    <tr>
+      <td>Gundam Build Fighters</td>
+      <td>2013</td>
+      <td>Near Future (Real World)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Gundam Reconguista in G</td>
+      <td>2014</td>
+      <td>Regild Century (RC)</td>
+      <td>RC 1014</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam: Iron-Blooded Orphans</td>
+      <td>2015</td>
+      <td>Post Disaster (PD)</td>
+      <td>PD 323</td>
+    </tr>
+    <tr>
+      <td>Mobile Suit Gundam: The Witch from Mercury</td>
+      <td>2022</td>
+      <td>A.S. (Ad Stella)</td>
+      <td>AS 122</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section class="page" id="page2">
+  <div class="page2-content">
+    <img src="image/rx-78-2gunpla.png" alt="First Gunpla" title="First Gunpla" width="550" height="700">
+    <div class="page2-text">
+      <h2>History of Gunpla</h2>
+  <p>Gundam Plastic models, Gundam Plamo, or Gunpla are model kits depicting the mecha machinery and characters of the fictional Gundam multiverse by Bandai Spirits.</p>
+  <p>These kits became popular among mecha anime fans and model enthusiasts in Japan and nearby Asian countries beginning in the 1980s. Gundam modeling spread in the 1990s with North America and Europe being exposed to Gundam through anime and manga.</p>
+  <p>The name Gunpla derives from an abbreviation of "Gundam plastic model" phrase, since most kits are made of plastic. Bandai sold over 100 million Gundam plastic model units between 1980 and 1984, and over 300 million units by May 1999. Recently, Bandai had sold an estimated 450 million units worldwide across nearly 2,000 different Gundam models.[3] As of March 2021, Bandai Namco has sold 714.84 million Gundam plastic model units, including 538.24 million standard Gundam units (since 1980) and 176.6 million SD Gundam units (since 1987).</p>
+    </div>
+  </div>
+  <div class="page2-content2">
+    <img src="image/grades.png" alt="Grades" title="Grades" width="550" height="700">
+    <div class="page2-text">
+      <h2>Different grades of Gunpla</h2>
+      <p>Gunpla kits are available in various grades, each offering different levels of detail, complexity, and articulation. The most common grades include:</p>
+      <ul>
+        <li>Entry Grade (EG): These kits are designed for beginners and are easy to assemble, often requiring no glue or paint.</li>
+        <li>High Grade (HG): These kits are typically 1/144 scale and are known for their affordability and ease of assembly, making them suitable for beginners.</li>
+        <li>Real Grade (RG): Also in 1/144 scale, RG kits offer a higher level of detail and articulation compared to HG kits, often featuring advanced engineering techniques.</li>
+        <li>Master Grade (MG): These kits are larger, usually 1/100 scale, and provide a more complex build with intricate details and features.</li>
+        <li>Perfect Grade (PG): The most detailed and complex kits, PG models are typically 1/60 scale and include advanced engineering, LED lighting options, and extensive articulation.</li>
+        <li>Super Deformed (SD): These kits feature a chibi-style design with exaggerated proportions, making them fun and easy to build.</li>
+      </ul>
+  <!-- Add more text/content here -->
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page3">
+  <div class="page3-content">
+    <h1>Showcase of Gunpla that I built Recently</h1>
+    <img src="image/Aerial.png" alt="Aerial Gundam" title="Aerial Gundam">
+    <p>Aerial Gundam is known for its sleek design and Gunbit System, which allows for advanced aerial maneuvers.</p>
+    <img src="image/bfburning.png" alt="Build Burning Gundam" title="Build Burning Gundam">
+    <p>Build Burning Gundam is a fan-favorite from the Build Fighters series, known for its vibrant colors and dynamic poseability.</p>
+    <img src="image/shamo.png" alt="Sandrock Gundam" title="Sandrock Gundam">
+    <p>Sandrock Gundam is a classic design from Gundam Wing, featuring a unique desert-themed color scheme and weaponry.</p>
+    <img src="image/red.png" alt="Red Gundam" title="Red Gundam">
+    <p>Red Gundam from gquuuuuux is known for its brand new design and impressive articulation.</p>
+    <img src="image/sazabi.png" alt="Sazabi" title="Sazabi">
+    <p>Sazabi is a fan-favorite from Char's Counterattack, known for its imposing size and intricate details.</p>
+    <img src="image/zeta3.png" alt="Zeta Gundam 3" title="Zeta Gundam 3">
+    <p>Zeta Gundam 3 is a classic design from the Zeta Gundam series, featuring a unique transformation mechanism and sleek design.</p>
+    <img src="image/shining.png" alt="Shining Gundam" title="Shining Gundam">
+    <p>Shining Gundam is a fan-favorite from the Build Fighters series, known for its vibrant colors and dynamic poseability.</p>
+    <div class="page3-text">
+      <!-- Add more text/content here -->
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page4">
+ <div class="page4-content">
+  <h1 id="miniGameTitle">Mini Game</h1>
+  <h2 id="scoreBox"></h2>
+  <h2 id="timerBox"></h2>
+  <h2 id="livesBox"></h2>
+  <button id="startGameBtn">Start Game</button>
+    <img src="image/zaku.png" alt="First Gunpla" title="First Gunpla" id="gundam-img">
+  </div>
+</section>
+
+<section class="page" id="page5">
+ <div class="page5-content">
+ <button id="startQuizBtn">Start Quiz</button>
+<div id="quiz">
+  <fieldset class="quiz-q" id="q1-fieldset">
+    <legend>1. What Full name of UC?</legend>
+    <input type="radio" name="q1" value="Universal Century"> Universal Century
+    <input type="radio" name="q1" value="Unicorn"> Unicorn
+    <input type="radio" name="q1" value="United Century"> United Century
+    <input type="radio" name="q1" value="United Country"> United Country
+    <button class="nextBtn" data-next="q2-fieldset" id="nextBtn1">Next</button>
+  </fieldset>
+  <fieldset class="quiz-q" id="q2-fieldset">
+    <legend>2. What is the code name of the first Gundam?</legend>
+    <input type="radio" name="q2" value="Rx-78-2"> Rx-78-2
+    <input type="radio" name="q2" value="Rx-78-3"> Rx-78-3
+    <input type="radio" name="q2" value="Rx-78-4"> Rx-78-4
+    <input type="radio" name="q2" value="Rx-78-1"> Rx-78-1
+    <button class="nextBtn" data-next="q3-fieldset" id="nextBtn">Next</button>
+  </fieldset>
+  <fieldset class="quiz-q" id="q3-fieldset">
+    <legend>3. Which timeline is strike gundam from?</legend>
+    <input type="radio" name="q3" value="After Colony"> After Colony
+    <input type="radio" name="q3" value="Cosmic Era"> Cosmic Era
+    <input type="radio" name="q3" value="Universal Century"> Universal Century
+    <button id="btnSubmit">Submit</button>
+    <button id="restartQuizBtn">Restart Quiz</button>
+  </fieldset>
+</div>
+<div id="scorebox"></div>
+  </div>
+</section>
+</main>
+<footer>
+    <p>2025 Kong junhao. All rights reserved. </p>
+    <a href="https://en.wikipedia.org/wiki/Gundam "> History of Gundam</a>
+    <a href="https://en.wikipedia.org/wiki/Gunpla"> History of Gunpla</a>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
