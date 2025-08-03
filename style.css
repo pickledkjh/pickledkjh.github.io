@@ -380,7 +380,41 @@ th, td {
 }
 
 /* --- Responsive styles for max-width: 800px --- */
+
+footer {
+  position: fixed;
+  bottom:-2rem;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: bottom 0.1s ease-out;
+}
+
+footer:hover{
+  bottom: 0;
+}
+
+#qrcode {
+    display: block;
+    margin: 2em auto 0 auto;
+    opacity: 1;
+    transition: opacity 1s;
+}
+#startpage.fadeout #qrcode {
+    opacity: 0;
+}
+
 @media screen and (max-width:800px) {
+    #qrcode {
+        display: none;
+    }
     header {
         flex-direction: column;
         align-items: center;
@@ -463,24 +497,18 @@ th, td {
         width: 100%;
         box-sizing: border-box;
     }
+    #startbtn {
+    opacity: 1;
+    color: white;
+    background-color: black;
+    font-size: 4vw;
+    height: auto;
+    width: auto;
+    border: none;
+    margin: 0;
+    transition: opacity 1s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-footer {
-  position: fixed;
-  bottom:-2rem;
-  left: 0;
-  right: 0;
-  height: 1rem;
-  background-color: #333;
-  color: white;
-  padding: 1em;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  transition: bottom 0.1s ease-out;
-}
-
-footer:hover{
-  bottom: 0;
 }
