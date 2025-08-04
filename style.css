@@ -514,11 +514,9 @@ footer:hover{
     opacity: 1;
     color: white;
     background-color: black;
-    font-size: 2vw;
+    font-size: 3vw;
     height: auto;
     width: auto;
-    top: 50%;
-    left: 50%;
     border: none;
     margin: 0;
     transition: opacity 1s ease-out;
