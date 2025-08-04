@@ -5,7 +5,7 @@
 "background_color": "#ffffff",
 "theme_color": "#00FF00",
 "icons": [
-{ "src": "images/alien.png",
+{ "src": "image/alien.png",
 "sizes": "192x192",
 "type": "image/png"
 }
