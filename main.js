@@ -184,16 +184,16 @@ window.addEventListener('scroll', function() {
      var page3content = document.querySelector('.page3-content');
     var page3content2 = document.querySelector('.page3-content2');
     if (page3content) {
-        var rect = page3content.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
+        var rect3 = page3content.getBoundingClientRect();
+        if (rect3.top < window.innerHeight && rect3.bottom > 0) {
             page3content.classList.add('visible');
         } else {
             page3content.classList.remove('visible');
         }
     }
     if (page3content2) {
-        var rect2 = page3content2.getBoundingClientRect();
-        if (rect2.top < window.innerHeight && rect2.bottom > 0) {
+        var rect4 = page3content2.getBoundingClientRect();
+        if (rect4.top < window.innerHeight && rect4.bottom > 0) {
             page3content2.classList.add('visible');
         } else {
             page3content2.classList.remove('visible');
@@ -203,6 +203,8 @@ window.addEventListener('scroll', function() {
 
 
 
+
+var moveGundamItvId;
 
 function GetRandom(min,max){
 //this will select a number between min and max
@@ -351,9 +353,14 @@ nextBtns.forEach(function(btn) {
 
 function CheckAns() {
     // If nothing is selected, .value will be undefined
-    q1 = document.querySelector("input[name='q1']:checked")?.value;
-    q2 = document.querySelector("input[name='q2']:checked")?.value;
-    q3 = document.querySelector("input[name='q3']:checked")?.value;
+    var q1Element = document.querySelector("input[name='q1']:checked");
+    var q2Element = document.querySelector("input[name='q2']:checked");
+    var q3Element = document.querySelector("input[name='q3']:checked");
+    
+    q1 = q1Element ? q1Element.value : undefined;
+    q2 = q2Element ? q2Element.value : undefined;
+    q3 = q3Element ? q3Element.value : undefined;
+    
     let score = 0;
     if (q1 === "Universal Century") score++;
     if (q2 === "Rx-78-2") score++;
@@ -392,6 +399,9 @@ restartQuizBtn.addEventListener("click", function() {
     startQuizBtn.style.display = "block";
     quizQuestions.forEach(function(q) {
         q.classList.remove("visible");
-        q.querySelectorAll("input[type='radio']").forEach(r => r.checked = false);
+        var radioInputs = q.querySelectorAll("input[type='radio']");
+        radioInputs.forEach(function(r) {
+            r.checked = false;
+        });
     });
 });
