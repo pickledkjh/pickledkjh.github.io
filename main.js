@@ -345,7 +345,7 @@ nextBtns.forEach(function(btn) {
         var nextId = btn.getAttribute("data-next");
         setTimeout(function() {
             showQuestion(nextId);
-        }, 700); // Wait for fade out transition
+        }, 1000); // Wait for fade out transition
     });
 });
 
@@ -386,6 +386,7 @@ window.addEventListener('resize', function() {
 
 const restartQuizBtn = document.getElementById("restartQuizBtn");
 
+// restart quiz
 restartQuizBtn.addEventListener("click", function() {
     scorebox.innerHTML = "";
     startQuizBtn.style.display = "block";
